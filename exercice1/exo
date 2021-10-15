@@ -1,1 +1,9 @@
-
+On souhaite modéliser un parking (classe vPark). Ce parking possède un nombre limité de
+places défini dans la variable capacite. Chaque voiture est modélisée par un thread (classe
+Voiture). Chaque voiture essaye d'entrer dans le parking (méthode Arriver), attend entre 0 et
+20 secondes et s'en va (méthode Partir).
+La méthode principale est définie dans la classe vPark. Elle crée un parking (c'est à dire une
+instance de la classe vPark) dont la capacité est 4 voitures. Puis, elle crée 100 voitures (en
+espaçant les créations de 0 à 5 secondes).
+Utiliser les mécanismes de synchronisation des threads en Java pour réaliser les deux
+classes : vPark et Voiture
