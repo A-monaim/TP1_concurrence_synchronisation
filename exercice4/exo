@@ -1,1 +1,7 @@
-
+Un producteur dépose des jetons dans un chapeau qui peut contenir N jetons. Un
+consommateur prend un jeton par fois du chapeau. Le nombre de consommateurs est C et
+celui de producteurs est P.
+- le producteur doit s'arrêter de déposer des jetons lorsqu'il y en a déjà N jetons,
+- le consommateur ne peut pas prendre de jeton s'il n'y en a pas (arrêt du consommateur).
+Ecrivez, en java, un programme qui implémente le producteurs-consommateurs problème en
+utilisant les sémaphores (java.util.concurrent.Semaphor).
