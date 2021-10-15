@@ -1,1 +1,12 @@
-
+Un sémaphore correspond à un compteur qui ne peut être accédé que par deux opérations
+atomiques: acquire et release. L'opération acquire décrémente le compteur alors que l'opération
+release l'incrémente. Les sémaphores sont souvent utilisés pour créer des sections critiques
+accessibles à N threads (N correspondant à la valeur d'initialisation du compteur du
+sémaphore : permis). L'opération acquire doit donc mettre en attente le (N+1)ième thread
+souhaitant entrer en section critique. L'opération release réveille un thread en attente. Lorsque
+la variable permis est négative, sa valeur absolue représente le nombre de threads en attente.
+Utiliser les sémaphores pour compléter les classes testSemaphore, ThreadA, ThreadB et ThreadC.
+Les classes ThreadA, ThreadB et ThreadC affichent, N fois, les lettres A, B et C respectivement.
+Synchronisez vos threads à l’aide de sémaphores de sorte que l’affichage effectué par la
+classe testSemaphore, pour N=5, soit : ABCABCABCABCABC.
+Tester votre programme en utilisant la classe java.util.concurrent.Semaphore
